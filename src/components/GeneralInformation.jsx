@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import styles from '../styles/FormInput.module.css'
+import Button from './Button.jsx';
 
 export default function GeneralInformation() {
     return (
@@ -21,7 +22,7 @@ export default function GeneralInformation() {
                 <input type="tel" />
             </label>
             <div className={styles.buttons}>
-                <button>Submit</button>
+                <Button />
             </div>
         </form>
     );

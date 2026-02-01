@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import styles from '../styles/FormInput.module.css'
+import Button from './Button.jsx';
 
 export default function EducationalExperience() {
     return (
@@ -21,7 +22,7 @@ export default function EducationalExperience() {
                 <input type="date" />
             </label>
             <div className={styles.buttons}>
-                <button>Submit</button>
+                <Button />
             </div>
         </form>
     );
