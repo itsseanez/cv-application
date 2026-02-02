@@ -16,6 +16,7 @@ export default function GeneralInformation({onSubmit}) {
   function handleCancel() {
     if(currentFormData) {
         setFormData(currentFormData)
+        setIsSubmitted(true);
     } else {
         setFormData({ name: "", email: "", phone: "" })
     }
