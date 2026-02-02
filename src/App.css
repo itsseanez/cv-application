@@ -25,10 +25,20 @@ header {
 
 main {
   margin: 15px;
+  padding: 40px;
   min-height: 50vh;
   background-color: var(--white-color);
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  line-height: 1.5;
+}
+
+main h1, main h2 {
+  background-color: var(--auxiliary-color);
+  color: var(--white-color);
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 

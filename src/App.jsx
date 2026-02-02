@@ -5,6 +5,7 @@ import EducationalExperience from "./components/EducationalExperience";
 import PracticalExperience from "./components/PracticalExperience";
 
 export default function App() {
+  const [generalInfo, setGeneralInfo] = useState(null);
 
   return (
     <div className="container">
@@ -12,11 +13,15 @@ export default function App() {
         <h1>CV Application.</h1>
       </header>
       <aside>
-        <GeneralInformation />
+        <GeneralInformation onSubmit={setGeneralInfo} />
         <EducationalExperience />
         <PracticalExperience />
       </aside>
-      <main></main>
+      <main>
+        {generalInfo && <h1>{generalInfo.name}</h1>}
+        {generalInfo && <p>{generalInfo.email}</p>}
+        {generalInfo && <p>{generalInfo.phone}</p>}
+      </main>
     </div>
   );
 }
